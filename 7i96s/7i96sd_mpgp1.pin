@@ -158,7 +158,7 @@ TB2-13,14              29   IOPort       QCount           0        Quad-IDX     
 TB2-16,17              30   IOPort       SSerial          0        RXData0         (In)
 TB2-18,19              31   IOPort       SSerial          0        TXData0         (Out)
 Internal-TXEn          32   IOPort       SSerial          0        TXEn0           (Out)
-Internal               33   IOPort       SSR              0        AC Ref          (Out)
+Internal-SSR           33   IOPort       SSR              0        AC Ref          (Out)
 
 IO Connections for P1 -> 7I96_2
 Pin#                  I/O   Pri. func    Sec. func        Chan     Sec. Pin func   Sec. Pin Dir

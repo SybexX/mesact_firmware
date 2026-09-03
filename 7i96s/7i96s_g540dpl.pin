@@ -121,14 +121,14 @@ Configuration pin-out:
 IO Connections for TB3 -> 7I96_0
 Pin#                  I/O   Pri. func    Sec. func        Chan     Sec. Pin func   Sec. Pin Dir
 
-TB3-1                   0   IOPort       InM              0        Input0          (In)
-TB3-2                   1   IOPort       InM              0        Input1          (In)
-TB3-3                   2   IOPort       InM              0        Input2          (In)
-TB3-4                   3   IOPort       InM              0        Input3          (In)
-TB3-5                   4   IOPort       InM              0        Input4          (In)
-TB3-6                   5   IOPort       InM              0        Input5          (In)
-TB3-7                   6   IOPort       InM              0        Input6          (In)
-TB3-8                   7   IOPort       InM              0        Input7          (In)
+TB3-1                   0   IOPort       InM              0        Input0_EncA0    (In)
+TB3-2                   1   IOPort       InM              0        Input1_EncB0    (In)
+TB3-3                   2   IOPort       InM              0        Input2_EncA1    (In)
+TB3-4                   3   IOPort       InM              0        Input3_EncB1    (In)
+TB3-5                   4   IOPort       InM              0        Input4_EncA2    (In)
+TB3-6                   5   IOPort       InM              0        Input5_EncB2    (In)
+TB3-7                   6   IOPort       InM              0        Input6_EncA3    (In)
+TB3-8                   7   IOPort       InM              0        Input7_EncB3    (In)
 TB3-9                   8   IOPort       InM              0        Input8          (In)
 TB3-10                  9   IOPort       InM              0        Input9          (In)
 TB3-11                 10   IOPort       InM              0        Input10         (In)
@@ -158,26 +158,26 @@ TB2-13,14              29   IOPort       QCount           2        Quad-A       
 TB2-16,17              30   IOPort       SSerial          0        RXData0         (In)
 TB2-18,19              31   IOPort       SSerial          0        TXData0         (Out)
 Internal-TXEn          32   IOPort       SSerial          0        TXEn0           (Out)
-Internal               33   IOPort       SSR              0        AC Ref          (Out)
+Internal-SSR           33   IOPort       SSR              0        AC Ref          (Out)
 
-IO Connections for P1 -> G540
+IO Connections for P1 -> 7I96_2
 Pin#                  I/O   Pri. func    Sec. func        Chan     Sec. Pin func   Sec. Pin Dir
 
-Output-2               34   IOPort       None           
-Spindle-PWM            35   IOPort       PWM              0        PWM             (Out)
-X-Step                 36   IOPort       StepGen          0        Step/Table1     (Out)
-Fault                  37   IOPort       None           
-X-Dir                  38   IOPort       StepGen          0        Dir/Table2      (Out)
-Charge-Pump            39   IOPort       StepGen          9        Step/Table1     (Out)
-Y-Step                 40   IOPort       StepGen          1        Step/Table1     (Out)
-Output-1               41   IOPort       None           
-Y-Dir                  42   IOPort       StepGen          1        Dir/Table2      (Out)
-Z-Step                 43   IOPort       StepGen          2        Step/Table1     (Out)
-Z-Dir                  44   IOPort       StepGen          2        Dir/Table2      (Out)
-A-Step                 45   IOPort       StepGen          3        Step/Table1     (Out)
-A-Dir                  46   IOPort       StepGen          3        Dir/Table2      (Out)
-Input-1                47   IOPort       None           
-Input-2                48   IOPort       None           
-Input-3                49   IOPort       None           
-Input-4                50   IOPort       None           
+P1-01/DB25-01          34   IOPort       None           
+P1-02/DB25-14          35   IOPort       PWM              0        PWM             (Out)
+P1-03/DB25-02          36   IOPort       StepGen          0        Step/Table1     (Out)
+P1-04/DB25-15          37   IOPort       None           
+P1-05/DB25-03          38   IOPort       StepGen          0        Dir/Table2      (Out)
+P1-06/DB25-16          39   IOPort       StepGen          9        Step/Table1     (Out)
+P1-07/DB25-04          40   IOPort       StepGen          1        Step/Table1     (Out)
+P1-08/DB25-17          41   IOPort       None           
+P1-09/DB25-05          42   IOPort       StepGen          1        Dir/Table2      (Out)
+P1-11/DB25-06          43   IOPort       StepGen          2        Step/Table1     (Out)
+P1-13/DB25-07          44   IOPort       StepGen          2        Dir/Table2      (Out)
+P1-15/DB25-08          45   IOPort       StepGen          3        Step/Table1     (Out)
+P1-17/DB25-09          46   IOPort       StepGen          3        Dir/Table2      (Out)
+P1-19/DB25-10          47   IOPort       None           
+P1-21/DB25-11          48   IOPort       None           
+P1-23/DB25-12          49   IOPort       None           
+P1-25/DB25-13          50   IOPort       None           
 

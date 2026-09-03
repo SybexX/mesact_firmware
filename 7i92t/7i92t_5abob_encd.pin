@@ -103,24 +103,24 @@ DB25 pin#             I/O   Pri. func    Sec. func        Chan     Sec. Pin func
 12                     15   IOPort       QCount           0        Quad-B          (In)
 13                     16   IOPort       QCount           0        Quad-IDX        (In)
 
-IO Connections for P1 -> HDR26
-Pin#                  I/O   Pri. func    Sec. func        Chan     Sec. Pin func   Sec. Pin Dir
+IO Connections for P1
+DB25 pin#             I/O   Pri. func    Sec. func        Chan     Sec. Pin func   Sec. Pin Dir
 
-1                      17   IOPort       QCount           1        Quad-A          (In)
-2                      18   IOPort       QCount           1        Quad-B          (In)
-3                      19   IOPort       QCount           1        Quad-IDX        (In)
-4                      20   IOPort       QCount           2        Quad-A          (In)
-5                      21   IOPort       QCount           2        Quad-B          (In)
-6                      22   IOPort       QCount           2        Quad-IDX        (In)
-7                      23   IOPort       QCount           3        Quad-A          (In)
-8                      24   IOPort       QCount           3        Quad-B          (In)
-9                      25   IOPort       QCount           3        Quad-IDX        (In)
-11                     26   IOPort       QCount           4        Quad-A          (In)
-13                     27   IOPort       QCount           4        Quad-B          (In)
-15                     28   IOPort       QCount           4        Quad-IDX        (In)
-17                     29   IOPort       QCount           5        Quad-A          (In)
-19                     30   IOPort       QCount           5        Quad-B          (In)
-21                     31   IOPort       QCount           5        Quad-IDX        (In)
-23                     32   IOPort       None           
-25                     33   IOPort       None           
+ 1                     17   IOPort       QCount           1        Quad-A          (In)
+14                     18   IOPort       QCount           1        Quad-B          (In)
+ 2                     19   IOPort       QCount           1        Quad-IDX        (In)
+15                     20   IOPort       QCount           2        Quad-A          (In)
+ 3                     21   IOPort       QCount           2        Quad-B          (In)
+16                     22   IOPort       QCount           2        Quad-IDX        (In)
+ 4                     23   IOPort       QCount           3        Quad-A          (In)
+17                     24   IOPort       QCount           3        Quad-B          (In)
+ 5                     25   IOPort       QCount           3        Quad-IDX        (In)
+ 6                     26   IOPort       QCount           4        Quad-A          (In)
+ 7                     27   IOPort       QCount           4        Quad-B          (In)
+ 8                     28   IOPort       QCount           4        Quad-IDX        (In)
+ 9                     29   IOPort       QCount           5        Quad-A          (In)
+10                     30   IOPort       QCount           5        Quad-B          (In)
+11                     31   IOPort       QCount           5        Quad-IDX        (In)
+12                     32   IOPort       None           
+13                     33   IOPort       None           
 

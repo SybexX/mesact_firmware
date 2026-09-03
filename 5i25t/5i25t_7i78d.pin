@@ -10,8 +10,21 @@ General configuration information:
   Clock Low frequency: 33.3333 MHz
   Clock High frequency: 160.0000 MHz
   IDROM Type: 3
+  Instance Stride 0: 4
+  Instance Stride 1: 64
+  Register Stride 0: 256
+  Register Stride 1: 256
 
-Modules in configuration: 
+Modules in configuration:
+
+  Module: DPLL
+  There are 1 of DPLL in configuration
+  Version: 0
+  Registers: 7
+  BaseAddress: 7000
+  ClockFrequency: 33.333 MHz
+  Register Stride: 256 bytes
+  Instance Stride: 4 bytes
 
   Module: WatchDog
   There are 1 of WatchDog in configuration
@@ -49,8 +62,8 @@ Modules in configuration:
   Register Stride: 256 bytes
   Instance Stride: 64 bytes
 
-  Module: PWMGen
-  There are 1 of PWMGen in configuration
+  Module: PWM
+  There are 1 of PWM in configuration
   Version: 0
   Registers: 5
   BaseAddress: 4100
@@ -76,46 +89,47 @@ Modules in configuration:
   Register Stride: 256 bytes
   Instance Stride: 4 bytes
 
-Configuration pin-out: 
+Configuration pin-out:
 
 IO Connections for P3
-Pin#  I/O   Pri. func    Sec. func       Chan      Pin func        Pin Dir
+DB25 pin#             I/O   Pri. func    Sec. func        Chan     Sec. Pin func   Sec. Pin Dir
 
- 1      0   IOPort       StepGen          0        Dir             (Out)
-14      1   IOPort       StepGen          0        Step            (Out)
- 2      2   IOPort       StepGen          1        Dir             (Out)
-15      3   IOPort       StepGen          1        Step            (Out)
- 3      4   IOPort       StepGen          2        Dir             (Out)
-16      5   IOPort       StepGen          2        Step            (Out)
- 4      6   IOPort       StepGen          3        Dir             (Out)
-17      7   IOPort       StepGen          3        Step            (Out)
- 5      8   IOPort       PWMGen           0        PWM             (Out)
- 6      9   IOPort       PWMGen           0        /Enable         (Out)
- 7     10   IOPort       PWMGen           0        Dir             (Out)
- 8     11   IOPort       SSerial          0        TXData1         (Out)
- 9     12   IOPort       SSerial          0        TXEn1           (Out)
-10     13   IOPort       SSerial          0        RXData1         (In)
-11     14   IOPort       QCount           0        Quad-IDX        (In)
-12     15   IOPort       QCount           0        Quad-B          (In)
-13     16   IOPort       QCount           0        Quad-A          (In)
+ 1                      0   IOPort       StepGen          0        Dir/Table2      (Out)
+14                      1   IOPort       StepGen          0        Step/Table1     (Out)
+ 2                      2   IOPort       StepGen          1        Dir/Table2      (Out)
+15                      3   IOPort       StepGen          1        Step/Table1     (Out)
+ 3                      4   IOPort       StepGen          2        Dir/Table2      (Out)
+16                      5   IOPort       StepGen          2        Step/Table1     (Out)
+ 4                      6   IOPort       StepGen          3        Dir/Table2      (Out)
+17                      7   IOPort       StepGen          3        Step/Table1     (Out)
+ 5                      8   IOPort       PWM              0        PWM             (Out)
+ 6                      9   IOPort       PWM              0        /Enable         (Out)
+ 7                     10   IOPort       PWM              0        Dir             (Out)
+ 8                     11   IOPort       SSerial          0        TXData0         (Out)
+ 9                     12   IOPort       SSerial          0        TXEn0           (Out)
+10                     13   IOPort       SSerial          0        RXData0         (In)
+11                     14   IOPort       QCount           0        Quad-IDX        (In)
+12                     15   IOPort       QCount           0        Quad-B          (In)
+13                     16   IOPort       QCount           0        Quad-A          (In)
 
 IO Connections for P2
-Pin#  I/O   Pri. func    Sec. func       Chan      Pin func        Pin Dir
+DB25 pin#             I/O   Pri. func    Sec. func        Chan     Sec. Pin func   Sec. Pin Dir
 
- 1     17   IOPort       None
-14     18   IOPort       None
- 2     19   IOPort       None
-15     20   IOPort       None
- 3     21   IOPort       None
-16     22   IOPort       None
- 4     23   IOPort       None
-17     24   IOPort       None
- 5     25   IOPort       None
- 6     26   IOPort       None
- 7     27   IOPort       None
- 8     28   IOPort       None
- 9     29   IOPort       None
-10     30   IOPort       None
-11     31   IOPort       None
-12     32   IOPort       None
-13     33   IOPort       None
+ 1                     17   IOPort       None           
+14                     18   IOPort       None           
+ 2                     19   IOPort       None           
+15                     20   IOPort       None           
+ 3                     21   IOPort       None           
+16                     22   IOPort       None           
+ 4                     23   IOPort       None           
+17                     24   IOPort       None           
+ 5                     25   IOPort       None           
+ 6                     26   IOPort       None           
+ 7                     27   IOPort       None           
+ 8                     28   IOPort       None           
+ 9                     29   IOPort       None           
+10                     30   IOPort       None           
+11                     31   IOPort       None           
+12                     32   IOPort       None           
+13                     33   IOPort       None           
+

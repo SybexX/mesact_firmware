@@ -8,7 +8,7 @@ General configuration information:
   Number of IO Ports: 3
   Width of one I/O port: 17
   Clock Low frequency: 100.0000 MHz
-  Clock High frequency: 200.0000 MHz
+  Clock High frequency: 160.0000 MHz
   IDROM Type: 3
   Instance Stride 0: 4
   Instance Stride 1: 64
@@ -58,7 +58,7 @@ Modules in configuration:
   Version: 0
   Registers: 5
   BaseAddress: 4100
-  ClockFrequency: 200.000 MHz
+  ClockFrequency: 160.000 MHz
   Register Stride: 256 bytes
   Instance Stride: 4 bytes
 
@@ -130,14 +130,14 @@ Configuration pin-out:
 IO Connections for TB3 -> 7I96_0
 Pin#                  I/O   Pri. func    Sec. func        Chan     Sec. Pin func   Sec. Pin Dir
 
-TB3-1                   0   IOPort       InM              0        Input0          (In)
-TB3-2                   1   IOPort       InM              0        Input1          (In)
-TB3-3                   2   IOPort       InM              0        Input2          (In)
-TB3-4                   3   IOPort       InM              0        Input3          (In)
-TB3-5                   4   IOPort       InM              0        Input4          (In)
-TB3-6                   5   IOPort       InM              0        Input5          (In)
-TB3-7                   6   IOPort       InM              0        Input6          (In)
-TB3-8                   7   IOPort       InM              0        Input7          (In)
+TB3-1                   0   IOPort       InM              0        Input0_EncA0    (In)
+TB3-2                   1   IOPort       InM              0        Input1_EncB0    (In)
+TB3-3                   2   IOPort       InM              0        Input2_EncA1    (In)
+TB3-4                   3   IOPort       InM              0        Input3_EncB1    (In)
+TB3-5                   4   IOPort       InM              0        Input4_EncA2    (In)
+TB3-6                   5   IOPort       InM              0        Input5_EncB2    (In)
+TB3-7                   6   IOPort       InM              0        Input6_EncA3    (In)
+TB3-8                   7   IOPort       InM              0        Input7_EncB3    (In)
 TB3-9                   8   IOPort       InM              0        Input8          (In)
 TB3-10                  9   IOPort       InM              0        Input9          (In)
 TB3-11                 10   IOPort       InM              0        Input10         (In)
@@ -167,7 +167,7 @@ TB2-13,14              29   IOPort       QCount           0        Quad-IDX     
 TB2-16,17              30   IOPort       PktUARTRX        0        RXData          (In)
 TB2-18,19              31   IOPort       PktUARTTX        0        TXData          (Out)
 Internal-TXEn          32   IOPort       PktUARTTX        0        TXEna           (Out)
-Internal               33   IOPort       SSR              0        AC Ref          (Out)
+Internal-SSR           33   IOPort       SSR              0        AC Ref          (Out)
 
 IO Connections for P1 -> 7I96_2
 Pin#                  I/O   Pri. func    Sec. func        Chan     Sec. Pin func   Sec. Pin Dir
